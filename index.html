@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nombre</title>
+</head>
+<body>
+
+	<h1>Proyecto Nombre</h1>
+	<style>
+		#miCanvas{
+			border:dotted 8px gray;
+			background:Black;   
+		}
+	</style>
+
+	<canvas id="miCanvas" width="1120px" height="180px"">
+		<script type="text/javascript">
+			
+			window.onload = function(){
+				var canvas = document.getElementById("miCanvas");
+				var ctx = canvas.getContext("2d");
+
+				//Descripcion de lineas
+            // Vocal E
+            ctx.lineWidth = 10;
+            ctx.strokeStyle = "gray";
+            ctx.fillStyle = "red";
+            ctx.beginPath();
+            //Vertical
+            ctx.moveTo(200,10);
+            ctx.lineTo(200,110);
+            //Horizontal
+            ctx.moveTo(200,15);
+            ctx.lineTo(250,15);
+            ctx.moveTo(200,60);
+            ctx.lineTo(250,60);
+            ctx.moveTo(200,105);
+            ctx.lineTo(250,105);    
+            ctx.stroke(); 
+
+            //Consonante R
+            ctx.lineWidth = 10;
+            ctx.strokeStyle = "red";
+            ctx.fillStyle = "red";
+            ctx.beginPath();
+            //Vertical
+            ctx.moveTo(265,10);
+            ctx.lineTo(265,110);
+            //Horizontal
+            ctx.moveTo(265,65);
+            ctx.lineTo(285,65);
+            ctx.moveTo(265,15);
+            ctx.lineTo(285,15);
+            //Diagonal
+            ctx.moveTo(278,63);
+            ctx.lineTo(315,110);
+            ctx.stroke();  
+            //Curvas
+            ctx.lineWidth = 10;
+            ctx.strokeStyle = "red";
+            ctx.fillStyle = "red";
+            ctx.beginPath();
+            ctx.arc(285,40,25, 1.5*Math.PI,0.5*Math.PI,false);
+            ctx.stroke(); 
+			
+            // Vocal I
+            ctx.lineWidth = 10;
+            ctx.strokeStyle = "orange";
+            ctx.fillStyle = "red";
+            ctx.beginPath();
+            //Vertical
+            ctx.moveTo(355,10);
+            ctx.lineTo(355,110);
+            //Horizontal
+            ctx.moveTo(330,15);
+            ctx.lineTo(380,15);
+            ctx.moveTo(330,105);
+            ctx.lineTo(380,105);    
+            ctx.stroke(); 
+
+            //Consonante k
+            ctx.lineWidth = 10;
+            ctx.strokeStyle = "blue";
+            ctx.fillStyle = "blue";
+            ctx.beginPath();
+            //Vertical
+            ctx.moveTo(400,10);
+            ctx.lineTo(400,110);
+            //Diagonal
+            ctx.moveTo(400,60);
+            ctx.lineTo(440,110);
+            ctx.stroke();
+
+            //Diagonal
+            ctx.moveTo(440,10);
+            ctx.lineTo(400,60);
+            ctx.stroke();
+
+            //Consonante A
+            ctx.lineWidth = 10;
+            ctx.strokeStyle = "yellow";
+            ctx.fillStyle = "yellow";
+            ctx.beginPath();
+            //Diagonal
+            ctx.moveTo(480,10);
+            ctx.lineTo(460,110);
+            //Diagonal
+            ctx.moveTo(480,10);
+            ctx.lineTo(500,110);
+            ctx.stroke();
+
+            //Diagonal
+            ctx.moveTo(470,70);
+            ctx.lineTo(490,70);
+            ctx.stroke();
+
+
+            //Consonante s
+            ctx.lineWidth = 10;
+            ctx.strokeStyle = "blue";
+            ctx.fillStyle = "blue";
+            ctx.beginPath();
+            //Horizontal
+            ctx.moveTo(580,15);
+            ctx.lineTo(610,15);
+            ctx.moveTo(580,61);
+            ctx.lineTo(590,61);
+            ctx.moveTo(560,107);
+            ctx.lineTo(590,107);
+            ctx.stroke(); 
+            //Curvas
+            ctx.lineWidth = 10;
+            ctx.strokeStyle = "blue";
+            ctx.fillStyle = "blue"
+            ctx.beginPath();
+            ctx.arc(590,84,23, 1.5*Math.PI,0.5*Math.PI,false);
+            ctx.stroke(); 
+
+            ctx.lineWidth = 10;
+            ctx.strokeStyle = "blue";
+            ctx.fillStyle = "blue";
+            ctx.beginPath();
+            ctx.arc(580,38,23, 1.5*Math.PI,0.5*Math.PI,true);
+            ctx.stroke(); 
+
+             // Vocal I
+             ctx.lineWidth = 10;
+            ctx.strokeStyle = "green";
+            ctx.fillStyle = "green";
+            ctx.beginPath();
+            //Vertical
+            ctx.moveTo(655,10);
+            ctx.lineTo(655,110);
+            //Horizontal
+            ctx.moveTo(630,15);
+            ctx.lineTo(680,15);
+            ctx.moveTo(630,105);
+            ctx.lineTo(680,105);    
+            ctx.stroke(); 
+
+            
+            //Consonante s
+            ctx.lineWidth = 10;
+            ctx.strokeStyle = "blue";
+            ctx.fillStyle = "blue";
+            ctx.beginPath();
+            //Horizontal
+            ctx.moveTo(700,15);
+            ctx.lineTo(730,15);
+            ctx.moveTo(720,61);
+            ctx.lineTo(730,61);
+            ctx.moveTo(720,107);
+            ctx.lineTo(750,107);
+            ctx.stroke(); 
+            //Curvas
+            ctx.lineWidth = 10;
+            ctx.strokeStyle = "blue";
+            ctx.fillStyle = "blue"
+            ctx.beginPath();
+            ctx.arc(720,84,23, 1.5*Math.PI,0.5*Math.PI,true);
+            ctx.stroke(); 
+
+            ctx.lineWidth = 10;
+            ctx.strokeStyle = "blue";
+            ctx.fillStyle = "blue";
+            ctx.beginPath();
+            ctx.arc(730,38,23, 1.5*Math.PI,0.5*Math.PI,false);
+            ctx.stroke(); 
+
+            //Consonante A
+            ctx.lineWidth = 10;
+            ctx.strokeStyle = "yellow";
+            ctx.fillStyle = "yellow";
+            ctx.beginPath();
+            //Diagonal
+            ctx.moveTo(790,10);
+            ctx.lineTo(770,110);
+            //Diagonal
+            ctx.moveTo(790,10);
+            ctx.lineTo(810,110);
+            ctx.stroke();
+
+            //Diagonal
+            ctx.moveTo(780,70);
+            ctx.lineTo(800,70);
+            ctx.stroke();
+
+            }
+
+
+		</script>
+	</canvas>
+	<br>
+	<img src="imagenes/ERIKA.jpg" height="250px " width="250px">
+
+      <div class="boton"><a href="JUEGO.html"><button type="button" id="elboton"><img src="imagenes/Sticth.png" id="estrella"></button></a></a></div>
+</body>
+</html>
